@@ -12,4 +12,4 @@ Context Operator helps keep AI work clear across projects, tasks, and handoffs. 
 
 **Known limitation:** In a fresh context-free Claude Code session, Task may ask more questions than intended before producing a useful partial specification.
 
-See [README.md](README.md) for installation. The custom [Context Operator License v1.0](LICENSE) permits use and commercial outputs while restricting redistribution. Public-directory metadata remains under review. No `v0.1.0` tag or GitHub Release has been created.
+See [README.md](README.md) for installation. The custom [Context Operator License v1.0](LICENSE) permits use and commercial outputs while restricting redistribution. Public-directory metadata remains under review. The `v0.1.0` tag and GitHub Release are published.
