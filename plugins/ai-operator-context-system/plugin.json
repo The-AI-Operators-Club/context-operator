@@ -7,6 +7,7 @@
     "name": "AI Operators"
   },
   "repository": "https://github.com/The-AI-Operators-Club/context-operator",
+  "license": "Context Operator License v1.0",
   "extensions": {
     "com.openai": {
       "interface": {

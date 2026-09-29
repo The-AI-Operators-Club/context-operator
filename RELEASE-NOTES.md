@@ -1,14 +1,15 @@
-# Context Operator 0.1.0 — distribution preparation
+# Context Operator 0.1.0
 
-Context Operator keeps AI work coherent across chats, agents, and long-running projects through Context, Task, Update, Compress, Handoff, and Review. It needs no external MCP server, API, or Context Operator account.
+Context Operator helps keep AI work clear across projects, tasks, and handoffs. Its six skills are **Context**, **Task**, **Update**, **Compress**, **Handoff**, and **Review**. It needs no Context Operator account, MCP server, API, or independent storage.
 
-| Surface | Status |
+| Surface | Evidence |
 |---|---|
-| Codex CLI | Verified locally; GitHub marketplace installation pending |
-| ChatGPT desktop | Verified local plugin loading and behavior |
-| Claude Code | Verified plugin loading and behavior; GitHub marketplace installation pending |
+| Codex CLI | GitHub marketplace installation, six-skill discovery, automatic Task behavior, and negative routing verified |
+| ChatGPT desktop | Plugin loading and behavior verified |
+| Claude Code | Plugin and strict validation; direct/local behavioral smoke tests; GitHub marketplace installation and six-skill discovery verified |
+| Claude Code remote-installed execution | Unverified |
 | ChatGPT web/mobile, Claude.ai, Claude desktop/app, Cowork | Unverified |
 
-**Known limitation:** In a fresh Claude Code session with no project context, Task may ask more questions than intended before producing a partial specification.
+**Known limitation:** In a fresh context-free Claude Code session, Task may ask more questions than intended before producing a useful partial specification.
 
-**Release blockers:** License, homepage, support URL, privacy policy URL, terms URL, final brand color, verified publisher identity, country availability, and final public listing choices still need owner decisions. No `v0.1.0` tag or GitHub Release exists.
+See [README.md](README.md) for installation. The custom [Context Operator License v1.0](LICENSE) permits use and commercial outputs while restricting redistribution. Public-directory metadata remains under review. No `v0.1.0` tag or GitHub Release has been created.

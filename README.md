@@ -16,17 +16,20 @@ Context Operator is a self-contained plugin with six workflows:
 
 No external MCP server, API, or Context Operator account is required.
 
+Context Operator is free to install and use for personal, professional, and internal business work. Commercial use of your outputs is permitted. Redistribution, resale, repackaging, sublicensing, and commercial distribution of derivative versions are prohibited. See [LICENSE](LICENSE) for full terms.
+
 ## Verified surfaces
 
-Codex CLI, ChatGPT desktop, and Claude Code have been tested. In a fresh Claude Code session without project context, Task may ask more questions than intended before producing a partial specification. ChatGPT web/mobile, Claude.ai, Claude desktop/app, and Cowork have not been verified.
+Codex CLI remote installation and behavior, ChatGPT desktop loading and behavior, Claude Code direct/local behavior, and Claude Code remote installation and six-skill discovery have been tested. Execution specifically from the Claude Code remote-installed plugin remains unverified. In a fresh context-free Claude Code session, Task may ask more questions than intended before producing a useful partial specification. ChatGPT web/mobile, Claude.ai, Claude desktop/app, and Cowork have not been verified.
 
 ## Install in Codex
 
 ```sh
 codex plugin marketplace add The-AI-Operators-Club/context-operator
+codex plugin add ai-operator-context-system@ai-operator-context-system
 ```
 
-Start Codex, open `/plugins`, select the **AI Operators** marketplace, install **Context Operator**, then start a new session.
+Start a new Codex session. The plugin is also available through the **AI Operators** marketplace in `/plugins`.
 
 ## Install in ChatGPT desktop
 
@@ -43,4 +46,4 @@ Start a new Claude Code session after installation. The plugin contains Context,
 
 ## Status
 
-This repository distributes a generated package. The license and other publication terms remain unresolved; see [release notes](RELEASE-NOTES.md). The development repository is the source of truth for changes.
+This repository distributes a generated package. The development repository is the source of truth for changes. Public-directory metadata remains under review; see [release notes](RELEASE-NOTES.md).
