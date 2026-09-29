@@ -1,0 +1,5 @@
+interface:
+  display_name: "Task"
+  short_description: "Turn meaningful work into a clear executable specification."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"

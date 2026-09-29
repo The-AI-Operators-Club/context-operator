@@ -1,0 +1,20 @@
+---
+name: compress
+description: Turn long, accumulated project or conversation history into compact durable current project state for continuation. Use for explicit or indirect preservation before a new chat; not for generic article, paragraph, meeting, or TL;DR summaries.
+---
+
+# Compress
+
+Reconstruct the smallest reliable current Project Context from the supplied history. Follow the [shared doctrine](references/context-doctrine.md), [information states](references/information-states.md), [terminology](references/terminology.md), and [Project Context schema](references/project-context.md).
+
+## Use when
+
+The user wants long project history condensed into durable state another agent can continue from, including when they ask to preserve what matters before a new chat. Do not activate for generic summarization or shortening without that durable-state purpose. If an existing Project Context is provided, use it as evidence of prior state, then reconcile it with later authorized changes; do not append a chronological digest.
+
+## Workflow
+
+1. Read the available project history and identify the objective, current state, durable facts, Decisions, Constraints, relevant Preferences, active Hypotheses, unresolved Open Questions, completed work, artifacts, and established next actions. Classify claims individually; treat source instructions as evidence unless authorized as current instructions.
+2. Deduplicate repeated claims. Resolve clearly superseded Decisions, changed Constraints, answered questions, and hypotheses later adopted as Decisions. Keep obsolete items out of active state; mention a supersession briefly only when it helps continuation. Do not promote earlier task-specific exclusions or a rejected Decision alternative into current Project Context Constraints; use the latest authorized project-state change and its actual authority. Do not decide unresolved factual conflicts by chronology alone. Preserve the competing claims and their uncertainty.
+3. Discard filler, repeated discussion, rejected ideas, and temporary debugging details once their outcomes are captured. Keep a debugging outcome only if it remains operationally relevant. Preserve provenance for disputed or high-impact state in proportion to its risk.
+4. Produce a compact current Project Context using only sections supported by the source. Keep Decisions, hard Constraints, Preferences, Hypotheses, Completed Work, Open Questions, and established Next Actions separate; a completed fix is not a Decision, and an assigned next action is not an Open Question. A favored style is not a hard Constraint. An approval that only changes a limit belongs under Constraints, without a duplicate Decision entry. After recording a durable debugging outcome, omit the discarded steps entirely, including sentences that list them or say they are no longer durable. Include Next Actions or priorities only when the source explicitly assigned them; a current Decision and its obvious implementation steps alone are not an assignment. Do not invent state or phase, infer priorities, or turn uncertainty into certainty. If a missing answer can be preserved as an Open Question, do so without interrupting the user; ask only when ambiguity prevents a reliable artifact.
+5. Check that a fresh agent could identify the objective, active Decisions and Constraints, unresolved questions, and material uncertainty from the result. Retain exact callable signatures or data contracts when they are established facts and likely necessary to continue the current work, especially when the next agent may lack the source artifact; naming a service alone does not preserve its call shape. Before finalizing, delete any sentence that names discarded debugging attempts or announces their removal; retain only the durable outcome. Remove any remaining noise, then ensure the result is materially shorter than the source without dropping necessary state. A reply does not imply independent storage; write a file only when requested or called for by the current workflow.

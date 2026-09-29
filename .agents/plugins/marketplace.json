@@ -1,0 +1,20 @@
+{
+  "name": "ai-operator-context-system",
+  "interface": {
+    "displayName": "AI Operators"
+  },
+  "plugins": [
+    {
+      "name": "ai-operator-context-system",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-operator-context-system"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

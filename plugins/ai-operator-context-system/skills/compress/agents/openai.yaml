@@ -1,0 +1,5 @@
+interface:
+  display_name: "Compress"
+  short_description: "Turn long project history into compact current state."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"

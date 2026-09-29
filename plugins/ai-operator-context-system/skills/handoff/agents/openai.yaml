@@ -1,0 +1,5 @@
+interface:
+  display_name: "Handoff"
+  short_description: "Package exactly what the next agent needs to continue."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"

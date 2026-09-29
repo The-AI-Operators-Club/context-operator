@@ -1,0 +1,13 @@
+{
+  "name": "ai-operator-context-system",
+  "description": "Six skills for project context, task definition, updates, compression, handoffs, and reviews.",
+  "owner": {
+    "name": "AI Operators"
+  },
+  "plugins": [
+    {
+      "name": "ai-operator-context-system",
+      "source": "./plugins/ai-operator-context-system"
+    }
+  ]
+}

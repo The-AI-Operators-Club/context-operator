@@ -1,0 +1,5 @@
+interface:
+  display_name: "Context"
+  short_description: "Build clean, durable context another agent can use."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"

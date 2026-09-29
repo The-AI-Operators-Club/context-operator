@@ -1,0 +1,20 @@
+---
+name: review
+description: Evaluate an artifact or AI result against its actual task, acceptance criteria, relevant project context, constraints, and available evidence. Use for requests to review, audit, or check whether work satisfies requirements; not for standalone rewriting, summarizing, explanation, or open-ended improvement.
+---
+
+# Review
+
+Determine whether the supplied result satisfies the work it was meant to do. Follow the [shared doctrine](references/context-doctrine.md), [information states](references/information-states.md), [terminology](references/terminology.md), and [Task Specification schema](references/task-specification.md) where relevant. Use the [review framework](references/review-framework.md) for consequential or multi-criterion reviews; a typo check needs only a direct answer.
+
+## Use when
+
+Use when the user asks to review or audit an artifact, implementation, or AI output against the task, requirements, acceptance criteria, or project context, including an indirect request such as “What did this implementation miss?” Do not treat every request to rewrite, improve, explain, summarize, or choose a strategy as a formal Review request.
+
+## Workflow
+
+1. Identify the artifact and actual review standard. Use the strongest available basis in this order: explicit acceptance criteria, explicit task requirements, explicit constraints, relevant current Project Context, stated user objective, then appropriate general domain checks. Read only context that could change the verdict. If sources conflict without a clear current authority, expose the conflict and its effect; do not silently choose. State what cannot be established when the basis or artifact is incomplete.
+2. Check requirement coverage and observable correctness, then constraints, unsupported assumptions, completeness, internal consistency, evidence, usability, and meaningful failure risks. Preserve information status: a Decision is not automatically a Constraint, a Hypothesis is not a Fact, and obsolete state is not a current requirement. Verify claims when available tools and task scope permit; distinguish an established error from missing evidence. Absence of support alone does not prove a claim false.
+3. Classify each claim precisely: **incorrect** only when available evidence establishes that the claim or result is wrong; **unsupported** when the artifact states a claim or conclusion more strongly than the available evidence supports (including promoting a hypothesis to a proven fact); **cannot verify** when the available material is insufficient to determine whether a claim is true or false. A claim may be unsupported as presented while its truth cannot be verified; if both apply, name the unsupported presentation without calling the underlying claim incorrect. Also distinguish **incomplete** required work from an **optional improvement** to work that already passes. Use **Blocking** only if a core requirement fails or serious error makes use or acceptance inappropriate; **Material** for a meaningful effect on correctness, completeness, reliability, or usefulness; **Minor** for a real low-impact issue. A failed criterion can yield an overall Fail without making each finding Blocking; a partially satisfied artifact can be Partial with a Material gap. Avoid arbitrary scores and inflated severity.
+4. Return prioritized, specific findings. For each material finding, identify the affected requirement or source, why it matters, and a remedy when clear. Give a concise acceptance status, using Pass, Partial, Fail, or Cannot verify for criteria that matter. Omit empty sections, duplicate findings, and vague praise. If all criteria genuinely pass, say so cleanly; do not invent faults or promote optional enhancements into failures. Keep a trivial review brief.
+5. By default, review without rewriting the artifact. If the user also requests a revision, preserve visible findings and then provide the corrected result. Do not expand into unrelated strategy or imply that an unrun test, unavailable source, or external system was verified.

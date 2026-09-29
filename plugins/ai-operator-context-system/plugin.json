@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ai-operator-context-system",
+  "version": "0.1.0",
+  "description": "Six skills for project context, task definition, updates, compression, handoffs, and reviews.",
+  "author": {
+    "name": "AI Operators"
+  },
+  "repository": "https://github.com/The-AI-Operators-Club/context-operator",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Context Operator",
+        "developerName": "AI Operators",
+        "category": "Productivity",
+        "shortDescription": "Keep AI work coherent across chats, agents, and long-running projects.",
+        "longDescription": "Structure project context, define work clearly, maintain decisions and constraints, compress long histories, hand work between agents, and review outputs against what was actually required.",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

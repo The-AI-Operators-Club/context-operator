@@ -1,0 +1,9 @@
+{
+  "name": "ai-operator-context-system",
+  "displayName": "Context Operator",
+  "version": "0.1.0",
+  "description": "Six skills for project context, task definition, updates, compression, handoffs, and reviews.",
+  "author": {
+    "name": "AI Operators"
+  }
+}

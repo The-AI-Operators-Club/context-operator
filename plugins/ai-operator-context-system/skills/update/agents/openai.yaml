@@ -1,0 +1,5 @@
+interface:
+  display_name: "Update"
+  short_description: "Keep project state current as decisions and constraints change."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"
